@@ -1,0 +1,1 @@
+console.log(require('fs').readFileSync('input.txt').toString().match(/mul[(]\d+,\d+[)]/gmi).map((m)=>m.substring(4,m.length-1).split(',').reduce((a,b)=>Number(a)*Number(b))).reduce((x,y)=>x+y));
